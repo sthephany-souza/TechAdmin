@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body_perfil {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.caixa_perfil {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.header_perfil {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.perfil_icone {
+    font-size: 70px;
+    color: #6c757d; 
+    min-width: 70px;
+}
+
+.perfil_dados_funcionario,
+.perfil_dados_empresa {
+    flex: 1;
+}
+
+.perfil_dados_funcionario h3,
+.perfil_dados_empresa h3 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.perfil_nome_funcionario {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.perfil_email_funcionario {
+    color: #6c757d;
+}
+
+.design_divisao {
+    border: none;
+    height: 1px;
+    background-color: #f0f0f0;
+    margin: 30px 0;
+}
+
+.perfil_campos {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 25px 40px; 
+}
+
+.campo_campos label {
+    display: block;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.grupo_label_icone {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 8px; 
+}
+
+.caixa_campo_editavel label {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.icone_alterar {
+    color: #555;
+    cursor: pointer;
+    font-size: 1.1em; 
+    transition: color 0.2s;
+}
+
+.icone_alterar:hover {
+    color: #797979;
+}
+
+.grupo_input {
+    position: relative; 
+}
+.input_perfil {
+    width: 100%;
+    padding: 10px 15px; 
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.input_perfil:focus {
+    border-color: #797979; 
+    outline: none;
+}
+
+.caixa_botao {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.botao_perfil {
+    background-color: #58CADB; 
+    color: white;
+    height: 45px;
+    width: 100%;
+    max-width: 180px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); 
+    font-size: 17px;
+}
+
+.botao_perfil:hover {
+    background-color: #4589a1;
+}
+
+.botao_perfil.botao_desabilitado {
+    background-color: #ccc; 
+    cursor: not-allowed; 
+    opacity: 0.8;
+}
+
+.input_perfil:disabled {
+    background-color: #f0f0f0;
+    color: #888;
+    cursor: default;
+}
+
+@media (max-width: 768px) {
+    .header_perfil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .perfil_dados_empresa {
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+    .perfil_campos {
+        grid-template-columns: 1fr; 
+    }
+    .caixa_perfil {
+        padding: 20px;
+    }
+}

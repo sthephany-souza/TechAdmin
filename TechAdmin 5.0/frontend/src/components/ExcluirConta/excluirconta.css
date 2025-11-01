@@ -1,0 +1,90 @@
+.modal_interacao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.modal_conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #333;
+  padding: 25px;
+  border-radius: 8px;
+  width: 90%; 
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  gap: 20px;
+}
+
+.modal_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal_header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.modal_input_confirmacao {
+  height: 50px;
+  width: 98%;
+  border: 1px solid #C8C8C8;
+  padding-left: 15px;
+  margin: 15px 0 15px 0;
+  border-radius: 5px;
+  color: #333;
+}
+
+.modal_input_confirmacao:focus {
+  border: 1px solid #C8C8C8;
+  outline: none;
+}
+
+.modal_acoes {
+  display: flex;
+  justify-content:center; 
+  gap: 30px;
+}
+
+.modal_acoes a {
+  text-decoration: none;
+}
+
+.botao_cancelar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  color: #333;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+}
+
+.botao_confirmar_exclusao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+}
+
