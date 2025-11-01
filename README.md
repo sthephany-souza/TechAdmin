@@ -1,4 +1,5 @@
-# Meu Projeto Full Stack
+# TechAdmin
+## Gerenciamento de equipamentos
 
 Este projeto é uma aplicação web com **React**, **Node.js** e **MongoDB**.
 
