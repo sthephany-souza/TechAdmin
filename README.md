@@ -21,6 +21,8 @@ Este projeto é uma aplicação web full stack, utilizando *React*, *Node.js* e 
 - Mongoose
 - JWT (Json Web Token)
 - Bcrypt (para criptografia de senha)
+- Dotenv (variáveis de ambiente)
+- CORS (controle de acesso entre front e back)
 
 ### Banco de dados
 - MongoDB (Atlas ou local)
